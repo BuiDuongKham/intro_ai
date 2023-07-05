@@ -10,10 +10,13 @@
   },
   "dependencies": {
     "autoprefixer": "10.4.14",
+    "datastructures-js": "^13.0.0",
     "next": "13.4.6",
     "postcss": "8.4.24",
     "react": "18.2.0",
     "react-dom": "18.2.0",
+    "react-hook-form": "^7.45.0",
+    "swr": "^2.1.5",
     "tailwindcss": "3.3.2"
   }
 }
