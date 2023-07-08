@@ -1,11 +1,24 @@
 import useSWR from "swr";
 import {useEffect} from "react";
-import {Matrix} from "@/components/matrix";
-
+import Othello from "@/components/othello";
 export default function Home() {
+  const dummyBoard = [
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 1, -1, 0, 0, 0],
+    [0, 0, 0, -1, 1, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+    [0, 0, 0, 0, 0, 0, 0, 0],
+  ]
+  const dummyPossibleMoves = [
+    [2, 3],
+    [3, 2],
+    [4, 5],
+    [5, 4]
+  ]
   return (
-    <div className={'flex justify-center'}>
-      <img className={'w-96 h-96'} src={'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTNWkwwKsZdfhYQim4NLSHXExTU5Ne8_EFQVfF2O7HE3A&s'}/>
-    </div>
+    <Othello board={dummyBoard} possibleMoves={dummyPossibleMoves}/>
   )
 }
